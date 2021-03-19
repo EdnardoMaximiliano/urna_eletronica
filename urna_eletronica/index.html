@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Urna eletronica</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<script src="codigo.js"></script>
+	<div id="container">
+		<form id= "formulario" action="" onsubmit="return confirmaVoto()" method="post">
+
+			<input id="field1" name="digitoUm" type="text" maxlength="1" class="tabable" tabindex="1" readonly autofocus />
+			<input id="field2" name="digitoDois"type="text" maxlength="1" class="tabable" tabindex="2" readonly />
+			<input id="brancoField" name="votoBranco" type="hidden" disabled readonly>
+
+			<input id="btn0" type="button" value="0" onclick="input(this);" />
+			<input id="btn1" type="button" value="1" onclick="input(this);" />
+			<input id="btn2" type="button" value="2" onclick="input(this);" />
+			<input id="btn3" type="button" value="3" onclick="input(this);" />
+			<input id="btn4" type="button" value="4" onclick="input(this);" />
+			<input id="btn5" type="button" value="5" onclick="input(this);" />
+			<input id="btn6" type="button" value="6" onclick="input(this);" />
+			<input id="btn7" type="button" value="7" onclick="input(this);" />
+			<input id="btn8" type="button" value="8" onclick="input(this);" />
+			<input id="btn9" type="button" value="9" onclick="input(this);" />
+
+			<input id="confirma" type="submit" value="Confirma" />
+			<input id="corrige" type="button" value="Corrige" onclick="del();" />
+			<input id="branco" type="button" value="Branco"  onclick="votarBranco()" />
+
+		</form>	
+	</div>
+</body>
+
+</html>
